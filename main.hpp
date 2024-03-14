@@ -2,13 +2,12 @@
 using namespace std;
 
 
-int getTwoValues(int, int);
-bool isPrime(int);
-int getNextPrime(int);
-int getPrevPrime(int);
+void getTwoValues(int& begin, int& end);
+int getNextPrime(int n);
+int getPrevPrime(int n);
 
 
-int getTwoValues(int &begin, int &end) {
+int getTwoValues(int begin, int end) {
     do {
         cout << "Enter values: " << endl;
         cin >> begin >> end;
