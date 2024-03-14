@@ -7,7 +7,7 @@ int getNextPrime(int);
 int getPrevPrime(int);
 
 
-int getTwoValues(int begin, int end) {
+void getTwoValues(int begin, int end) {
     do {
         cout << "Enter values: " << endl;
         cin >> begin >> end;
