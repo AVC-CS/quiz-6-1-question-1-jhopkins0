@@ -3,8 +3,8 @@ using namespace std;
 
 
 void getTwoValues(int& begin, int& end);
-int getNextPrime(int n);
-int getPrevPrime(int n);
+int getNextPrime(int);
+int getPrevPrime(int);
 
 
 int getTwoValues(int begin, int end) {
