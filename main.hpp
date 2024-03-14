@@ -1,3 +1,9 @@
+#define MAIN_HPP
+
+#include <iostream>
+using namespace std;
+
+
 int getTwoValues(int, int);
 bool Prime(int);
 int nextPrime(int);
@@ -23,7 +29,7 @@ bool Prime(int num){
 }
 
 int nextPrime(int begin){
-    for(int i = begin + 1; i++){
+    for(int i = begin + 1; ; i++){
         if(Prime(i)){
             return i;
         }
