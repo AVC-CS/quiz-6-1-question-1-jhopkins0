@@ -3,9 +3,9 @@ using namespace std;
 
 
 int getTwoValues(int, int);
-bool Prime(int);
-int nextPrime(int);
-int prevPrime(int);
+bool isPrime(int);
+int getNextPrime(int);
+int getPrevPrime(int);
 
 
 int getTwoValues(int &begin, int &end){
@@ -14,7 +14,7 @@ int getTwoValues(int &begin, int &end){
     }while(begin >= end);
 }
 
-bool Prime(int num){
+bool isPrime(int num){
     if(num <= 1){
         return false;
     }
@@ -26,17 +26,17 @@ bool Prime(int num){
     return true;
 }
 
-int nextPrime(int begin){
+int getNextPrime(int begin){
     for(int i = begin + 1; ; i++){
-        if(Prime(i)){
+        if(isPrime(i)){
             return i;
         }
     }
 }
 
-int prevPrime(int end){
+int getPrevPrime(int end){
     for(int i = end - 1; i > 1;){
-        if(Prime(i)){
+        if(isPrime(i)){
             return i;
         }
     }
