@@ -1,5 +1,3 @@
-#define MAIN_HPP
-
 #include <iostream>
 using namespace std;
 
@@ -43,10 +41,3 @@ int prevPrime(int end){
         }
     }
 }
-//********************
-// Declare Function Prototypes
-//********************
-
-// ******************************
-// Implement all your functions here
-// ******************************
